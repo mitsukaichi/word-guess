@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Document</title>
+    <title>Word Guessing Game</title>
 </head>
 <body>
 
 <script src="./assets/script.js"></script>   
 </body>
+
+<div class="game-container">
+    <h1>Word Guessing Game</h1>
+    <button id="start">Start Game</button>
+    <p class="word-display">
+        <span id="word-blanks">_ _ _ _ _</span>
+    </p>
+    <p>Time Remaining: <span id="timer">60</span> seconds</p>
+    <div class="scoreboard">
+        <p>Wins: <span id="win-count">0</span></p>
+        <p>Losses: <span id="loss-count">0</span></p>
+    </div>
+    <div id="notification" class="hidden">
+        <p id="win-msg" class="hidden">You've won!</p>
+        <p id="loss-msg" class="hidden">Time's up!</p>
+    </div>
+    <p>Press a letter on your keyboard to guess a letter!</p>
+</div>
+
+</body>
+
 </html>
