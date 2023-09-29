@@ -87,9 +87,6 @@ document.addEventListener("keydown", function(event){
         var wordLocation = wordArray.indexOf(keyPress);
         inputField[wordLocation] = wordArray[wordLocation];
         userInput.textContent = inputField.join(" ");
-        console.log(inputField);
-        console.log(wordArray);
-        console.log(inputField === wordArray);
     };
     if (!inputField.includes("_")){
         winMsg.setAttribute("class","displayed");
